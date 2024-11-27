@@ -1,5 +1,6 @@
 import { Menus } from '@/types/menu';
-
+// 所有功能页面一览
+// 在permiss.ts修改默认用户权限（将对应id加入则获得权限）
 export const menuData: Menus[] = [
     {
         id: '0',
@@ -169,12 +170,6 @@ export const menuData: Menus[] = [
         permiss: '5',
     },
     {
-        id: '7',
-        icon: 'Brush',
-        index: '/theme',
-        title: '主题',
-    },
-    {
         id: '6',
         icon: 'DocumentAdd',
         index: '6',
@@ -217,5 +212,11 @@ export const menuData: Menus[] = [
                 title: '404',
             },
         ],
+    },
+    {
+        id: '7',
+        icon: 'Brush',
+        index: '/theme',
+        title: '主题',
     },
 ];
