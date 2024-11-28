@@ -26,12 +26,12 @@ export const menuData: Menus[] = [
                 index: '/system-role',
                 title: '角色管理',
             },
-            {
-                id: '13',
-                pid: '1',
-                index: '/system-menu',
-                title: '菜单管理',
-            },
+            // {
+            //     id: '13',
+            //     pid: '1',
+            //     index: '/system-menu',
+            //     title: '菜单管理',
+            // },
         ],
     },
     {
@@ -219,4 +219,10 @@ export const menuData: Menus[] = [
         index: '/theme',
         title: '主题',
     },
+    {
+        id: '8',
+        icon: 'DataAnalysis',
+        index: '/feedback',
+        title: '反馈',
+    }
 ];
