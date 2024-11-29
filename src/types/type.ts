@@ -58,3 +58,8 @@ export interface Log {
     action: string; // 操作描述
     timestamp: Date; // 操作时间
 }
+
+export interface EvaluationToShow extends Evaluation{
+    doctor_name: string;
+    record_id: number;
+}

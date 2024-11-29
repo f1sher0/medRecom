@@ -2,19 +2,26 @@
   <div>
     <TableSearch :query="query" :options="searchOpt" :search="handleSearch" />
     <div class="container">
-      <TableCustom :columns="columns" :tableData="tableData" :total="page.total" :viewFunc="handleView"
+      <TableCustom v-if="!loading" :columns="columns" :tableData="tableData" :total="page.total" :viewFunc="handleView"
                    :delFunc="handleDelete" :editFunc="handleEdit" :refresh="getData" :currentPage="page.index"
-                   :changePage="changePage">
+                   :changePage="changePage" :page-size="page.size">
         <template #toolbarBtn>
           <el-button type="warning" :icon="CirclePlusFilled" @click="visible = true">新增</el-button>
         </template>
-        <template #state="{ rows }">
-          <el-tag :type="rows.state ? 'success' : 'danger'">
-            {{ rows.state ? '正常' : '异常' }}
+
+        <template #effectiveness_score="{ rows }">
+           <el-tag :type="rows.effectiveness_score > '7' ? 'success' : 'danger'">
+             {{rows.effectiveness_score}}
+           </el-tag>
+        </template>
+
+        <template #safety_score="{ rows }">
+          <el-tag :type="rows.safety_score > '7' ? 'success' : 'danger'">
+            {{rows.safety_score}}
           </el-tag>
         </template>
-      </TableCustom>
 
+      </TableCustom>
     </div>
     <el-dialog :title="isEdit ? '编辑' : '新增'" v-model="visible" width="700px" destroy-on-close
                :close-on-click-modal="false" @close="closeDialog">
@@ -26,24 +33,23 @@
     </el-dialog>
     <el-dialog title="查看详情" v-model="visible1" width="700px" destroy-on-close>
       <TableDetail :data="viewData">
-        <template #thumb="{ rows }">
-          <el-image :src="rows.thumb"></el-image>
-        </template>
       </TableDetail>
     </el-dialog>
   </div>
 </template>
 
 <script setup lang="ts" name="basetable">
-import { ref, reactive } from 'vue';
+import {ref, reactive, onMounted} from 'vue';
 import { ElMessage, } from 'element-plus';
 import { CirclePlusFilled } from '@element-plus/icons-vue';
-import { fetchData } from '@/api/index';
+import { fetchAllData } from '@/api/index';
 import TableCustom from '@/components/table-custom.vue';
 import TableDetail from '@/components/table-detail.vue';
 import TableSearch from '@/components/table-search.vue';
+import {Evaluation, EvaluationToShow} from "@/types/type";
 import { TableItem } from '@/types/table';
 import { FormOption, FormOptionList } from '@/types/form-option';
+import {log} from "echarts/types/src/util/log";
 
 // 查询相关
 const query = reactive({
@@ -60,27 +66,46 @@ const handleSearch = () => {
 let columns = ref([
   { type: 'selection' },
   { type: 'index', label: '序号', width: 55, align: 'center' },
-  { prop: 'name', label: '用户名' },
-  { prop: 'state', label: '账户状态', width: 50},
-  { prop: 'date', label: '提交时间', width: 250},
-  { prop: 'operator', label: '操作', width: 400 },
+  { prop: 'doctor_name', label: '提交医生姓名' },
+  { prop: 'record_id', label: '就诊记录编号', width: 130},
+  { prop: 'recommendation_id', label: '推荐记录编号', width: 130},
+  { prop: 'effectiveness_score', label: '有效性评分', width: 100},
+  { prop: 'safety_score', label: '安全性评分', width: 100},
+  { prop: 'created_at', label: '提交时间', width: 250},
+  { prop: 'operator', label: '操作', width: 300 },
 ])
 
 const page = reactive({
   index: 1,
-  size: 10,
-  total: 200,
+  size: 5,
+  total: 0,
 })
-const tableData = ref<TableItem[]>([]);
+
+const rawData = ref<Evaluation[]>([]); // 全部数据
+const tableData = ref<Evaluation[]>([]); // 当前页显示的数据
+
+const loading = ref(true);
 const getData = async () => {
-  const res = await fetchData()
-  tableData.value = res.data.list;
+  const res = await fetchAllData();
+  rawData.value = res.data.evaluationsToShow;
+  page.total = rawData.value.length;
+  updateTableData();
+  loading.value = false; // 数据加载完成
 };
-getData();
+
+onMounted(() => {
+  getData();
+})
+
+const updateTableData = () => {
+  const start = (page.index - 1) * page.size;
+  const end = page.index * page.size;
+  tableData.value = rawData.value.slice(start, end);
+}
 
 const changePage = (val: number) => {
   page.index = val;
-  getData();
+  updateTableData();
 };
 
 // 新增/编辑弹窗相关
@@ -119,29 +144,38 @@ const viewData = ref({
   row: {},
   list: []
 });
-const handleView = (row: TableItem) => {
+const handleView = (row: EvaluationToShow) => {
+  console.log(row);
   viewData.value.row = { ...row }
   viewData.value.list = [
     {
-      prop: 'id',
-      label: '用户ID',
+      prop: 'doctor_id',
+      label: '医生ID',
     },
     {
-      prop: 'name',
-      label: '用户名',
+      prop: 'doctor_name',
+      label: '医生姓名',
     },
     {
-      prop: 'money',
-      label: '账户余额',
+      prop: 'record_id',
+      label: '就诊记录编号',
     },
     {
-      prop: 'state',
-      label: '账户状态',
+      prop: 'recommendation_id',
+      label: '推荐记录编号',
     },
     {
-      prop: 'thumb',
-      label: '头像',
+      prop: 'effectiveness_score',
+      label: '有效性评分',
     },
+    {
+      prop: 'safety_score',
+      label: '安全性评分',
+    },
+    {
+      prop: 'comments',
+      label: '评价',
+    }
   ]
   visible1.value = true;
 };

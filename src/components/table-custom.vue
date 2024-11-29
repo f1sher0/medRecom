@@ -73,7 +73,7 @@
 </template>
 
 <script setup lang="ts">
-import { toRefs, PropType, ref } from 'vue'
+import {toRefs, PropType, ref, onMounted} from 'vue'
 import { Delete, Edit, View, Refresh } from '@element-plus/icons-vue';
 import { ElMessageBox } from 'element-plus';
 
@@ -169,6 +169,7 @@ const handleSelectionChange = (selection: any[]) => {
 
 // 当前页码变化的事件
 const handleCurrentChange = (val: number) => {
+    console.log(val)
     props.changePage(val)
 }
 
@@ -185,6 +186,10 @@ const handleDelete = (row) => {
 const getIndex = (index: number) => {
     return index + 1 + (currentPage.value - 1) * pageSize.value
 }
+
+onMounted(() => {
+  console.log(props.pageSize)
+})
 
 </script>
 

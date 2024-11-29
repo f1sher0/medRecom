@@ -1,0 +1,874 @@
+{
+  "users": [
+    {
+      "user_id": 1,
+      "username": "Martina80",
+      "password": "CoEKVyqFGwqAVsA",
+      "role": "doctor",
+      "created_at": "2024-03-04T20:00:58.755Z",
+      "updated_at": "2024-11-27T22:50:27.175Z"
+    },
+    {
+      "user_id": 2,
+      "username": "Peggie_Rippin60",
+      "password": "vOxYxNVk2nTwLPi",
+      "role": "admin",
+      "created_at": "2024-06-02T16:11:08.843Z",
+      "updated_at": "2024-11-27T15:07:00.809Z"
+    },
+    {
+      "user_id": 3,
+      "username": "Wyman88",
+      "password": "lOA0j4r8edChgxZ",
+      "role": "doctor",
+      "created_at": "2024-08-04T01:02:33.897Z",
+      "updated_at": "2024-11-27T09:25:21.376Z"
+    },
+    {
+      "user_id": 4,
+      "username": "Araceli2",
+      "password": "E3bZDjh7vUlfQ67",
+      "role": "admin",
+      "created_at": "2024-06-29T11:51:49.927Z",
+      "updated_at": "2024-11-27T11:40:02.006Z"
+    },
+    {
+      "user_id": 5,
+      "username": "Reanna.King",
+      "password": "y87bQqUwrie6plI",
+      "role": "doctor",
+      "created_at": "2024-06-04T09:27:54.647Z",
+      "updated_at": "2024-11-28T05:33:53.248Z"
+    }
+  ],
+  "patients": [
+    {
+      "patient_id": 1,
+      "name": "Opal Davis",
+      "gender": "male",
+      "birth_date": "1950-04-19T19:46:13.473Z",
+      "created_by": 1,
+      "created_at": "2024-11-02T21:58:46.629Z"
+    },
+    {
+      "patient_id": 2,
+      "name": "Jeanette Wehner",
+      "gender": "female",
+      "birth_date": "1951-09-14T14:49:37.551Z",
+      "created_by": 3,
+      "created_at": "2024-08-18T21:01:46.467Z"
+    },
+    {
+      "patient_id": 3,
+      "name": "Jean Hand",
+      "gender": "female",
+      "birth_date": "2002-08-17T06:07:42.249Z",
+      "created_by": 2,
+      "created_at": "2024-10-27T18:35:04.201Z"
+    },
+    {
+      "patient_id": 4,
+      "name": "Lindsey Gleason PhD",
+      "gender": "male",
+      "birth_date": "1969-12-03T03:36:25.373Z",
+      "created_by": 3,
+      "created_at": "2024-03-17T17:15:40.517Z"
+    },
+    {
+      "patient_id": 5,
+      "name": "Tonya Lind",
+      "gender": "male",
+      "birth_date": "1961-03-18T02:41:33.022Z",
+      "created_by": 3,
+      "created_at": "2024-07-22T07:45:37.973Z"
+    },
+    {
+      "patient_id": 6,
+      "name": "Irene Connelly",
+      "gender": "female",
+      "birth_date": "1977-11-07T01:35:10.633Z",
+      "created_by": 1,
+      "created_at": "2024-04-27T17:41:21.335Z"
+    },
+    {
+      "patient_id": 7,
+      "name": "Lillie Grady",
+      "gender": "female",
+      "birth_date": "1980-07-06T23:29:21.531Z",
+      "created_by": 2,
+      "created_at": "2024-07-13T06:57:40.575Z"
+    },
+    {
+      "patient_id": 8,
+      "name": "Leonard Moen",
+      "gender": "male",
+      "birth_date": "1978-08-01T20:53:53.771Z",
+      "created_by": 2,
+      "created_at": "2024-02-16T13:53:43.564Z"
+    },
+    {
+      "patient_id": 9,
+      "name": "Rosie Stracke",
+      "gender": "female",
+      "birth_date": "1968-09-25T04:34:35.460Z",
+      "created_by": 3,
+      "created_at": "2024-02-01T09:25:22.473Z"
+    },
+    {
+      "patient_id": 10,
+      "name": "Melody Weimann",
+      "gender": "female",
+      "birth_date": "1965-04-30T14:27:32.617Z",
+      "created_by": 1,
+      "created_at": "2024-04-25T23:46:40.573Z"
+    }
+  ],
+  "patientRecords": [
+    {
+      "record_id": 1,
+      "patient_id": 3,
+      "visit_date": "2024-11-28T07:46:21.046Z",
+      "diagnoses": [
+        "2294",
+        "6456",
+        "4218",
+        "6222"
+      ],
+      "procedures": [
+        "5743"
+      ],
+      "medications": [
+        "aCqr"
+      ]
+    },
+    {
+      "record_id": 2,
+      "patient_id": 1,
+      "visit_date": "2024-11-28T05:11:49.254Z",
+      "diagnoses": [
+        "9935",
+        "7703",
+        "7037",
+        "7468",
+        "1502"
+      ],
+      "procedures": [
+        "3025"
+      ],
+      "medications": [
+        "T205",
+        "KRCB",
+        "1NWF",
+        "kjW3",
+        "wXnz"
+      ]
+    },
+    {
+      "record_id": 3,
+      "patient_id": 4,
+      "visit_date": "2024-11-27T17:06:33.436Z",
+      "diagnoses": [
+        "8049",
+        "9667",
+        "8448"
+      ],
+      "procedures": [
+        "3958",
+        "0497",
+        "6676"
+      ],
+      "medications": [
+        "FzqL",
+        "jZeA",
+        "rsSp",
+        "3paN",
+        "vn5K",
+        "kZiF"
+      ]
+    },
+    {
+      "record_id": 4,
+      "patient_id": 4,
+      "visit_date": "2024-11-27T12:47:46.487Z",
+      "diagnoses": [
+        "2136",
+        "6994",
+        "5769",
+        "0553",
+        "5086"
+      ],
+      "procedures": [
+        "7967",
+        "7187",
+        "7983"
+      ],
+      "medications": [
+        "BhFG",
+        "uj9a",
+        "xKUl",
+        "aQU3"
+      ]
+    },
+    {
+      "record_id": 5,
+      "patient_id": 1,
+      "visit_date": "2024-11-28T02:12:11.016Z",
+      "diagnoses": [
+        "8995",
+        "0313"
+      ],
+      "procedures": [
+        "7834",
+        "9552"
+      ],
+      "medications": [
+        "CcYL",
+        "zYTz",
+        "oWsK",
+        "Ojz9",
+        "U32v",
+        "gN7v"
+      ]
+    },
+    {
+      "record_id": 6,
+      "patient_id": 3,
+      "visit_date": "2024-11-27T16:19:13.523Z",
+      "diagnoses": [
+        "7676",
+        "0977",
+        "4241",
+        "8012"
+      ],
+      "procedures": [
+        "3499",
+        "2205"
+      ],
+      "medications": [
+        "jU51",
+        "Hs3L"
+      ]
+    },
+    {
+      "record_id": 7,
+      "patient_id": 5,
+      "visit_date": "2024-11-27T16:33:36.765Z",
+      "diagnoses": [
+        "4394",
+        "0470"
+      ],
+      "procedures": [
+        "7339",
+        "3324",
+        "9972"
+      ],
+      "medications": [
+        "QAux"
+      ]
+    },
+    {
+      "record_id": 8,
+      "patient_id": 5,
+      "visit_date": "2024-11-27T21:01:32.759Z",
+      "diagnoses": [
+        "6695",
+        "4180",
+        "1876",
+        "1618",
+        "5542"
+      ],
+      "procedures": [
+        "1447",
+        "2196",
+        "5703"
+      ],
+      "medications": [
+        "dDU4",
+        "2c7N",
+        "RAjM",
+        "fxOz",
+        "0PTw",
+        "TPgK"
+      ]
+    },
+    {
+      "record_id": 9,
+      "patient_id": 3,
+      "visit_date": "2024-11-27T21:19:14.997Z",
+      "diagnoses": [
+        "4467",
+        "1120",
+        "1128",
+        "4104"
+      ],
+      "procedures": [
+        "5849"
+      ],
+      "medications": [
+        "s1R6"
+      ]
+    },
+    {
+      "record_id": 10,
+      "patient_id": 1,
+      "visit_date": "2024-11-27T13:06:00.506Z",
+      "diagnoses": [
+        "4630",
+        "0219",
+        "5588",
+        "9991"
+      ],
+      "procedures": [
+        "6711"
+      ],
+      "medications": [
+        "zbdj",
+        "GfqC",
+        "03md",
+        "bXB3",
+        "86jM"
+      ]
+    },
+    {
+      "record_id": 11,
+      "patient_id": 5,
+      "visit_date": "2024-11-27T12:04:11.811Z",
+      "diagnoses": [
+        "5228",
+        "0452",
+        "4877",
+        "9490"
+      ],
+      "procedures": [
+        "1168",
+        "4723"
+      ],
+      "medications": [
+        "Ajk3",
+        "1ME5",
+        "VsN6"
+      ]
+    },
+    {
+      "record_id": 12,
+      "patient_id": 4,
+      "visit_date": "2024-11-28T02:22:43.601Z",
+      "diagnoses": [
+        "5209",
+        "0076",
+        "5654",
+        "7035",
+        "8380"
+      ],
+      "procedures": [
+        "0155",
+        "4586",
+        "1591"
+      ],
+      "medications": [
+        "9Zzd",
+        "2djX",
+        "8dUT",
+        "zmKW",
+        "iFmP"
+      ]
+    },
+    {
+      "record_id": 13,
+      "patient_id": 3,
+      "visit_date": "2024-11-27T22:01:44.191Z",
+      "diagnoses": [
+        "6029",
+        "3203",
+        "1514",
+        "2505",
+        "7213"
+      ],
+      "procedures": [
+        "3596",
+        "7916",
+        "8372"
+      ],
+      "medications": [
+        "aZtK",
+        "kIZG"
+      ]
+    },
+    {
+      "record_id": 14,
+      "patient_id": 3,
+      "visit_date": "2024-11-27T16:38:40.855Z",
+      "diagnoses": [
+        "0804",
+        "5813",
+        "3602",
+        "8673",
+        "1611"
+      ],
+      "procedures": [
+        "7157",
+        "3755"
+      ],
+      "medications": [
+        "LE3r",
+        "7SFY",
+        "XX0F",
+        "kqlJ",
+        "UYJt"
+      ]
+    },
+    {
+      "record_id": 15,
+      "patient_id": 3,
+      "visit_date": "2024-11-27T15:18:26.015Z",
+      "diagnoses": [
+        "7463",
+        "8881"
+      ],
+      "procedures": [
+        "0290",
+        "9308",
+        "2188"
+      ],
+      "medications": [
+        "KCo7",
+        "liog",
+        "3HVb",
+        "G33D",
+        "nzmI"
+      ]
+    },
+    {
+      "record_id": 16,
+      "patient_id": 5,
+      "visit_date": "2024-11-27T12:15:16.943Z",
+      "diagnoses": [
+        "6585"
+      ],
+      "procedures": [
+        "5937"
+      ],
+      "medications": [
+        "ImZa",
+        "eVyo",
+        "UI98"
+      ]
+    },
+    {
+      "record_id": 17,
+      "patient_id": 5,
+      "visit_date": "2024-11-27T15:03:04.493Z",
+      "diagnoses": [
+        "0576",
+        "1601",
+        "8990"
+      ],
+      "procedures": [
+        "9948",
+        "8904",
+        "8070"
+      ],
+      "medications": [
+        "uSdg",
+        "O663",
+        "rIoh",
+        "lH73",
+        "iE6A",
+        "9W8y"
+      ]
+    },
+    {
+      "record_id": 18,
+      "patient_id": 5,
+      "visit_date": "2024-11-27T19:47:49.608Z",
+      "diagnoses": [
+        "4142",
+        "1873"
+      ],
+      "procedures": [
+        "8161",
+        "1565",
+        "6316"
+      ],
+      "medications": [
+        "ZLKi",
+        "Durq",
+        "3J4p"
+      ]
+    },
+    {
+      "record_id": 19,
+      "patient_id": 2,
+      "visit_date": "2024-11-27T09:08:50.812Z",
+      "diagnoses": [
+        "4894",
+        "7471",
+        "1950"
+      ],
+      "procedures": [
+        "5441"
+      ],
+      "medications": [
+        "YJ3q",
+        "lNXj",
+        "oN3N"
+      ]
+    },
+    {
+      "record_id": 20,
+      "patient_id": 3,
+      "visit_date": "2024-11-28T04:00:00.628Z",
+      "diagnoses": [
+        "0887"
+      ],
+      "procedures": [
+        "5853",
+        "8043",
+        "6015"
+      ],
+      "medications": [
+        "tgoi",
+        "sElD",
+        "JYNu",
+        "LHqL",
+        "d36i"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "recommendation_id": 1,
+      "record_id": 5,
+      "recommended_meds": [
+        "SmpQ"
+      ],
+      "ddi_rate": 0.6726096240270283,
+      "created_at": "2024-11-27T17:14:31.616Z"
+    },
+    {
+      "recommendation_id": 2,
+      "record_id": 2,
+      "recommended_meds": [
+        "aDpn",
+        "qQG7",
+        "Rbbv",
+        "oBPm"
+      ],
+      "ddi_rate": 0.013817764773594421,
+      "created_at": "2024-11-27T10:22:07.754Z"
+    },
+    {
+      "recommendation_id": 3,
+      "record_id": 4,
+      "recommended_meds": [
+        "IBXZ",
+        "Al0z",
+        "aAHY",
+        "CZtn",
+        "OyiL"
+      ],
+      "ddi_rate": 0.5261092638002219,
+      "created_at": "2024-11-27T08:46:01.156Z"
+    },
+    {
+      "recommendation_id": 4,
+      "record_id": 5,
+      "recommended_meds": [
+        "nZgm",
+        "MGwu",
+        "Nxl1"
+      ],
+      "ddi_rate": 0.37457968611140724,
+      "created_at": "2024-11-27T15:40:44.492Z"
+    },
+    {
+      "recommendation_id": 5,
+      "record_id": 5,
+      "recommended_meds": [
+        "CPFo",
+        "2cYI",
+        "SPjq"
+      ],
+      "ddi_rate": 0.27706881273259865,
+      "created_at": "2024-11-27T20:16:46.548Z"
+    },
+    {
+      "recommendation_id": 6,
+      "record_id": 3,
+      "recommended_meds": [
+        "Od9M"
+      ],
+      "ddi_rate": 0.9050641055850515,
+      "created_at": "2024-11-27T16:30:31.960Z"
+    },
+    {
+      "recommendation_id": 7,
+      "record_id": 2,
+      "recommended_meds": [
+        "z8HR",
+        "bfak"
+      ],
+      "ddi_rate": 0.6139317493748583,
+      "created_at": "2024-11-27T12:20:51.936Z"
+    },
+    {
+      "recommendation_id": 8,
+      "record_id": 5,
+      "recommended_meds": [
+        "glOf",
+        "fu4d",
+        "SPzZ",
+        "ZKRU",
+        "TrpA"
+      ],
+      "ddi_rate": 0.7067051929674721,
+      "created_at": "2024-11-27T22:50:13.130Z"
+    },
+    {
+      "recommendation_id": 9,
+      "record_id": 2,
+      "recommended_meds": [
+        "2gOq",
+        "zErb",
+        "IMnL",
+        "d4mX",
+        "a8CG"
+      ],
+      "ddi_rate": 0.6165817117005743,
+      "created_at": "2024-11-27T09:00:38.890Z"
+    },
+    {
+      "recommendation_id": 10,
+      "record_id": 4,
+      "recommended_meds": [
+        "TNcF",
+        "Ktdt",
+        "aYdn",
+        "Cwhu",
+        "U3Ih"
+      ],
+      "ddi_rate": 0.15090683161373686,
+      "created_at": "2024-11-27T15:33:07.272Z"
+    },
+    {
+      "recommendation_id": 11,
+      "record_id": 3,
+      "recommended_meds": [
+        "wyY6",
+        "v1EJ",
+        "WvGd"
+      ],
+      "ddi_rate": 0.6286584720325921,
+      "created_at": "2024-11-27T12:04:40.474Z"
+    },
+    {
+      "recommendation_id": 12,
+      "record_id": 3,
+      "recommended_meds": [
+        "RGJk",
+        "YDXi",
+        "1N6I",
+        "CSA5",
+        "dsA1"
+      ],
+      "ddi_rate": 0.6700952467426113,
+      "created_at": "2024-11-27T19:33:01.344Z"
+    },
+    {
+      "recommendation_id": 13,
+      "record_id": 2,
+      "recommended_meds": [
+        "JeoZ",
+        "nc3U",
+        "44zh"
+      ],
+      "ddi_rate": 0.34366234112830074,
+      "created_at": "2024-11-28T07:16:17.412Z"
+    },
+    {
+      "recommendation_id": 14,
+      "record_id": 1,
+      "recommended_meds": [
+        "5jx9",
+        "0zUU",
+        "oV4K",
+        "aez7",
+        "eifY"
+      ],
+      "ddi_rate": 0.018921100213453612,
+      "created_at": "2024-11-27T19:36:05.524Z"
+    },
+    {
+      "recommendation_id": 15,
+      "record_id": 2,
+      "recommended_meds": [
+        "vDrm",
+        "9PWt",
+        "w0GA",
+        "qy9R"
+      ],
+      "ddi_rate": 0.7012562743939877,
+      "created_at": "2024-11-28T02:58:24.226Z"
+    }
+  ],
+  "evaluations": [
+    {
+      "evaluation_id": 1,
+      "recommendation_id": 1,
+      "doctor_id": 2,
+      "effectiveness_score": 6,
+      "safety_score": 3,
+      "comments": "Vitium distinctio thema natus casus dedico maxime basium curvo.",
+      "created_at": "2024-11-27T09:30:08.433Z"
+    },
+    {
+      "evaluation_id": 2,
+      "recommendation_id": 3,
+      "doctor_id": 1,
+      "effectiveness_score": 3,
+      "safety_score": 4,
+      "comments": "Adimpleo cetera cibus contabesco aurum degero.",
+      "created_at": "2024-11-27T10:52:29.630Z"
+    },
+    {
+      "evaluation_id": 3,
+      "recommendation_id": 3,
+      "doctor_id": 2,
+      "effectiveness_score": 4,
+      "safety_score": 1,
+      "comments": "Umerus desolo necessitatibus adulatio distinctio vox stillicidium desidero arcesso.",
+      "created_at": "2024-11-27T20:18:38.534Z"
+    },
+    {
+      "evaluation_id": 4,
+      "recommendation_id": 3,
+      "doctor_id": 2,
+      "effectiveness_score": 5,
+      "safety_score": 10,
+      "comments": "Depopulo dignissimos exercitationem adflicto aeneus debitis accusator virgo.",
+      "created_at": "2024-11-27T12:06:12.376Z"
+    },
+    {
+      "evaluation_id": 5,
+      "recommendation_id": 1,
+      "doctor_id": 2,
+      "effectiveness_score": 6,
+      "safety_score": 7,
+      "comments": "Dens ultio confugo vita quas socius apud vicinus cohors fugiat.",
+      "created_at": "2024-11-28T08:23:50.036Z"
+    },
+    {
+      "evaluation_id": 6,
+      "recommendation_id": 1,
+      "doctor_id": 2,
+      "effectiveness_score": 6,
+      "safety_score": 4,
+      "comments": "Reprehenderit comburo utrimque valetudo aurum sint.",
+      "created_at": "2024-11-27T21:56:13.357Z"
+    },
+    {
+      "evaluation_id": 7,
+      "recommendation_id": 2,
+      "doctor_id": 2,
+      "effectiveness_score": 3,
+      "safety_score": 2,
+      "comments": "Eaque conitor infit.",
+      "created_at": "2024-11-27T17:44:15.988Z"
+    },
+    {
+      "evaluation_id": 8,
+      "recommendation_id": 1,
+      "doctor_id": 2,
+      "effectiveness_score": 9,
+      "safety_score": 5,
+      "comments": "Curatio tollo viridis adduco tutis coerceo trado ara.",
+      "created_at": "2024-11-27T13:08:18.639Z"
+    },
+    {
+      "evaluation_id": 9,
+      "recommendation_id": 2,
+      "doctor_id": 1,
+      "effectiveness_score": 5,
+      "safety_score": 1,
+      "comments": "Careo celer acervus vociferor.",
+      "created_at": "2024-11-28T01:15:27.911Z"
+    },
+    {
+      "evaluation_id": 10,
+      "recommendation_id": 2,
+      "doctor_id": 2,
+      "effectiveness_score": 2,
+      "safety_score": 7,
+      "comments": "Corona attero magnam videlicet creator tres.",
+      "created_at": "2024-11-27T19:38:33.668Z"
+    }
+  ],
+  "evaluationsToShow": [
+    {
+      "evaluation_id": 1,
+      "doctor_id": 2,
+      "effectiveness_score": 6,
+      "safety_score": 3,
+      "comments": "Vitium distinctio thema natus casus dedico maxime basium curvo.",
+      "created_at": "2024-11-27T09:30:08.433Z",
+      "doctor_name": "lingua",
+      "record_id": 1221,
+      "recommendation_id": 699
+    },
+    {
+      "evaluation_id": 1,
+      "doctor_id": 2,
+      "effectiveness_score": 6,
+      "safety_score": 3,
+      "comments": "Vitium distinctio thema natus casus dedico maxime basium curvo.",
+      "created_at": "2024-11-27T09:30:08.433Z",
+      "doctor_name": "lingua",
+      "record_id": 1221,
+      "recommendation_id": 699
+    },
+    {
+      "evaluation_id": 1,
+      "doctor_id": 2,
+      "effectiveness_score": 6,
+      "safety_score": 3,
+      "comments": "Vitium distinctio thema natus casus dedico maxime basium curvo.",
+      "created_at": "2024-11-27T09:30:08.433Z",
+      "doctor_name": "lingua",
+      "record_id": 1221,
+      "recommendation_id": 699
+    },
+    {
+      "evaluation_id": 1,
+      "doctor_id": 2,
+      "effectiveness_score": 9,
+      "safety_score": 8,
+      "comments": "Vitium distinctio thema natus casus dedico maxime basium curvo.",
+      "created_at": "2024-11-27T09:30:08.433Z",
+      "doctor_name": "lingua",
+      "record_id": 1221,
+      "recommendation_id": 699
+    },
+    {
+      "evaluation_id": 1,
+      "doctor_id": 2,
+      "effectiveness_score": 8,
+      "safety_score": 7,
+      "comments": "Vitium distinctio thema natus casus dedico maxime basium curvo.",
+      "created_at": "2024-11-27T09:30:08.433Z",
+      "doctor_name": "lingua",
+      "record_id": 1221,
+      "recommendation_id": 699
+    },
+    {
+      "evaluation_id": 1,
+      "doctor_id": 2,
+      "effectiveness_score": 6,
+      "safety_score": 3,
+      "comments": "Vitium distinctio thema natus casus dedico maxime basium curvo.",
+      "created_at": "2024-11-27T09:30:08.433Z",
+      "doctor_name": "lingua",
+      "record_id": 1221,
+      "recommendation_id": 699
+    }
+  ]
+}
